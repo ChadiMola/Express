@@ -1,0 +1,35 @@
+doctype html
+head
+  title Contact Us
+  link(rel='stylesheet' href='style.css')
+header
+  nav
+    ul
+      li
+        a(href='/') Home
+      li
+        a(href='about') About
+      li
+        a(href='contact') Contact
+main
+  h1 Contact Us
+  p Please use the following contact information to get in touch with us:
+  ul
+    li Email: info@nodejs.com
+    li Phone: 555-555-5555
+    li Address: 123 Node.js Street, Node.js City, Node.js State
+  p
+    | Alternatively, you can fill out the form below and we will get back to you as soon as possible.
+  form(action='submit-form.php' method='post')
+    label(for='name') Name:
+    input#name(type='text' name='name')
+    br
+    label(for='email') Email:
+    input#email(type='email' name='email')
+    br
+    label(for='message') Message:
+    textarea#message(name='message')
+    br
+    input(type='submit' value='Submit')
+footer
+  p Copyright &copy; 2022 Node.js Website
